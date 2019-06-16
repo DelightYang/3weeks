@@ -3,8 +3,60 @@
     font-family: Helvetica, sans-serif;
 }
 
-.section_rotation {
-    width: 500px;
-    height: 400px;
-    background-image: url("/assert/week1/hero.jpg")
+/*******Header********/
+header {
+    height: 153px;
+    color: #555555;
+}
+
+header > div {
+    height: inherit;
+}
+
+header > .logo {
+    float: left;
+    padding-left: 330px;
+    padding-top: 45px;
+    font-size: 50px;     
+}
+
+header > .menu {
+    float: right;
+    padding-top: 60px;    
+    padding-right: 520px;
+}
+
+header > .menu > span {    
+    padding-left: 30px;
+    padding-right: 30px;
+}
+header > .menu > span.search { 
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/********Body********/
+main {
+    width: 2880px;
+}
+.section_rotation {    
+    height: 1410px;
+    background-image: url("/assert/week1/hero.jpg");
+    background-position-x: center;
+    background-position-y: -302px;
+    color: #ffffff;
+    
+}
+
+.section_rotation > div {    
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 50%;    
+}
+
+.section_rotation > div > .rotation_title {        
+    font-size: 120px;
+    white-space:nowrap;
+    padding-right: 1px;
 }
