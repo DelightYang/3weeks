@@ -3,60 +3,167 @@
     font-family: Helvetica, sans-serif;
 }
 
-/*******Header********/
-header {
-    height: 153px;
-    color: #555555;
+body {
+    width: 1440px;
 }
 
-header > div {
+button {
+    width: 200px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 14px;
+    background: none;
+    border: 2px solid #ffffff;
+}
+
+button.btn_purple {
+    background-color: #645bd7;
+    border: none;
+}
+
+
+/*******Header********/
+
+header {
+    height: 80px;
+    color: #555555;
+    overflow: hidden;
+}
+
+header>div {
     height: inherit;
 }
 
-header > .logo {
+header>.logo {
     float: left;
-    padding-left: 330px;
-    padding-top: 45px;
-    font-size: 50px;     
+    padding-left: 163px;
+    padding-top: 25px;
+    font-size: 25px;
 }
 
-header > .menu {
+header>.menu {
     float: right;
-    padding-top: 60px;    
-    padding-right: 520px;
+    padding-top: 33px;
+    padding-right: 50px;
+    font-size: 13px;
 }
 
-header > .menu > span {    
-    padding-left: 30px;
-    padding-right: 30px;
+header>.menu>span {
+    padding-left: 17px;
+    padding-right: 17px;
 }
-header > .menu > span.search { 
-    padding-left: 100px;
+
+header>.menu>span.search {
+    padding-left: 50px;
     padding-right: 100px;
 }
 
+
 /********Body********/
-main {
-    width: 2880px;
-}
-.section_rotation {    
-    height: 1410px;
+
+main>.section_rotation {
+    height: 705px;
     background-image: url("/assert/week1/hero.jpg");
-    background-position-x: center;
-    background-position-y: -302px;
+    background-size: cover;
+    background-position-y: -150px;
     color: #ffffff;
-    
 }
 
-.section_rotation > div {    
-    margin: 0 auto;
+main>.section_rotation>div {
     text-align: center;
     position: relative;
-    top: 50%;    
+    top: 35%;
 }
 
-.section_rotation > div > .rotation_title {        
-    font-size: 120px;
-    white-space:nowrap;
-    padding-right: 1px;
+main>.section_rotation>div>p.rotation_title {
+    font-size: 60px;
+}
+
+main>.section_content_top {
+    height: 720px;
+}
+
+main>.section_content_top>div {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+
+main>.section_content_top>div.left {
+    padding-top: 175px;
+    padding-left: 150px;
+    width: 600px;
+}
+
+main>.section_content_top>div.right {
+    padding-top: 250px;
+    margin: 0;
+    padding-left: 170px;
+    width: 360px;
+    line-height: 28px;
+}
+
+main>.section_content_top>div.right>p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #919ca2;
+}
+
+main>.section_content_bottom {
+    background-color: #f5f5f5;
+    height: 645px;
+}
+
+main>.section_content_bottom>div {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+
+main>.section_content_bottom>div.left {
+    padding-top: 180px;
+    padding-left: 150px;
+    width: 400px;
+    line-height: 28px;
+}
+
+main>.section_content_bottom>div.left>p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #919ca2;
+}
+
+main>.section_content_bottom>div.right {
+    padding-top: 100px;
+    margin: 0;
+    padding-left: 80px;
+    width: 600px;
+}
+
+
+/********Footer*******/
+
+footer {
+    background-color: #0e1015;
+    color: #ffffff;
+    height: 200px;
+}
+
+footer>div {
+    display: inline-block;
+}
+
+footer>div.powered_by {
+    text-align: center;
+    width: 550px;
+    font-size: 14px;
+    line-height: 200px;
+}
+
+footer>div.social_media {
+    padding-left: 590px;
+}
+
+footer>div.social_media>i {
+    padding: 0 4px;
 }
