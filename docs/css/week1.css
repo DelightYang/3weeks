@@ -63,7 +63,7 @@ header>.menu>span.search {
 
 main>.section_rotation {
     height: 705px;
-    background-image: url("/assert/week1/hero.jpg");
+    background-image: url("../assert/week1/hero.jpg");
     background-size: cover;
     background-position-y: -150px;
     color: #ffffff;
