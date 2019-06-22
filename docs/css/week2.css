@@ -1,3 +1,104 @@
-h1 {
-  color: blue;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
 }
+
+a {
+    color: #40a390;
+}
+
+
+/********header*********/
+
+header {
+    text-align: center;
+}
+
+.menu {
+    position: relative;
+    top: -255px;
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
+}
+
+.menu a {
+    font-size: 16px;
+    line-height: 58px;
+}
+
+.logo {
+    display: block;
+    position: relative;
+    top: 76px;
+    padding: 30px 0;
+}
+
+.rotation_banner_top {
+    font-size: 18px;
+    line-height: 35px;
+    padding: 10px 20px;
+}
+
+.rotation_banner_middle {
+    font-size: 16px;
+    line-height: 35px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: black;
+}
+
+.rotation_banner_bottom {
+    font-size: 14px;
+    line-height: 35px;
+    padding: 10px 20px;
+    text-align: right;
+    color: #a4a4a4;
+}
+
+.section_subscribe {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.subscribe_description {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.subscribe_container {
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: 1px dashed #cccccc;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (max-width: 575.98px) {
+    .logo {
+        top: 376px;
+    }
+    .rotation_banner_bottom {
+        border-bottom: 1px dashed #cccccc;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .logo {
+        top: 76px;
+    }
+    .nav {
+        justify-content: center;
+    }
+    .rotation_banner_bottom {
+        border-bottom: 1px dashed #cccccc;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}

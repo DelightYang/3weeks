@@ -34,26 +34,26 @@ header>div {
     height: inherit;
 }
 
-header>.logo {
+.logo {
     float: left;
     padding-left: 163px;
     padding-top: 25px;
     font-size: 25px;
 }
 
-header>.menu {
+.menu {
     float: right;
     padding-top: 33px;
     padding-right: 50px;
     font-size: 13px;
 }
 
-header>.menu>span {
+.menu>span {
     padding-left: 17px;
     padding-right: 17px;
 }
 
-header>.menu>span.search {
+.search {
     padding-left: 50px;
     padding-right: 100px;
 }
@@ -61,7 +61,7 @@ header>.menu>span.search {
 
 /********Body********/
 
-main>.section_rotation {
+.section_rotation {
     height: 705px;
     background-image: url("../assert/week1/hero.jpg");
     background-size: cover;
@@ -69,33 +69,33 @@ main>.section_rotation {
     color: #ffffff;
 }
 
-main>.section_rotation>div {
+.section_rotation>div {
     text-align: center;
     position: relative;
     top: 35%;
 }
 
-main>.section_rotation>div>p.rotation_title {
+.rotation_title {
     font-size: 60px;
 }
 
-main>.section_content_top {
+.section_content_top {
     height: 720px;
 }
 
-main>.section_content_top>div {
+.section_content_top>div {
     display: inline-block;
     height: 100%;
     vertical-align: top;
 }
 
-main>.section_content_top>div.left {
+.section_content_top>div.left {
     padding-top: 175px;
     padding-left: 150px;
     width: 600px;
 }
 
-main>.section_content_top>div.right {
+.section_content_top>div.right {
     padding-top: 250px;
     margin: 0;
     padding-left: 170px;
@@ -103,37 +103,37 @@ main>.section_content_top>div.right {
     line-height: 28px;
 }
 
-main>.section_content_top>div.right>p {
+.section_content_top>div.right>p {
     margin-top: 30px;
     margin-bottom: 10px;
     color: #919ca2;
 }
 
-main>.section_content_bottom {
+.section_content_bottom {
     background-color: #f5f5f5;
     height: 645px;
 }
 
-main>.section_content_bottom>div {
+.section_content_bottom>div {
     display: inline-block;
     height: 100%;
     vertical-align: top;
 }
 
-main>.section_content_bottom>div.left {
+.section_content_bottom>div.left {
     padding-top: 180px;
     padding-left: 150px;
     width: 400px;
     line-height: 28px;
 }
 
-main>.section_content_bottom>div.left>p {
+.section_content_bottom>div.left>p {
     margin-top: 30px;
     margin-bottom: 10px;
     color: #919ca2;
 }
 
-main>.section_content_bottom>div.right {
+.section_content_bottom>div.right {
     padding-top: 100px;
     margin: 0;
     padding-left: 80px;
@@ -153,17 +153,17 @@ footer>div {
     display: inline-block;
 }
 
-footer>div.powered_by {
+.powered_by {
     text-align: center;
     width: 550px;
     font-size: 14px;
     line-height: 200px;
 }
 
-footer>div.social_media {
+.social_media {
     padding-left: 590px;
 }
 
-footer>div.social_media>i {
+.social_media>i {
     padding: 0 4px;
 }
