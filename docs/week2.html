@@ -14,20 +14,22 @@
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12">
-                    <a class="logo"><img src="resources/logo.png" class="img-fluid"></a>
+                <div class="col-sm-12 col-md-2">
+                    <div class="logo">
+                        <a><img src="resources/logo.png" class="img-fluid"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="menu">
-                <nav>
-                    <ul class="nav nav-pills flex-column flex-sm-row">
-                        <li class="nav-item"><a href="#" class="nav-link">Tastemakers</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Bolg</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">The A-List</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contribute</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    </ul>
-                </nav>
+                <div class="menu col-md-9">
+                    <nav>
+                        <ul class="nav nav-pills flex-column flex-sm-row">
+                            <li class="nav-item"><i class="fa fa-delicious fa-2x"></i><a href="#" class="nav-link">Tastemakers</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Bolg</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">The A-List</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Contribute</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -42,34 +44,53 @@
         </section>
         <section class="section_subscribe container-fluid">
             <div class="row subscribe_description">
-                <div class="col-sm-2"><i class="fa fa-envelope-o fa-4x align-top"></i></div>
-                <div class="col-sm-10">
+                <div class="col-sm-2 col-3"><i class="fa fa-envelope-o fa-4x align-top"></i></div>
+                <div class="col-sm-10 col-9">
                     <p>Sing up for our newsletter to receive a handpicked selection of the best stories, receipt, and news, delived weekly to your inbox.</p>
                 </div>
             </div>
             <div class="row subscribe_container">
-                <div class="col-sm-8"><input type="text" class="form-control subscribe-input"></div>
-                <div class="col-sm-4"><button class="btn btn-light">Subscribe</button></div>
+                <div class="col-sm-8 col-8"><input type="text" class="form-control subscribe-input"></div>
+                <div class="col-sm-4 col-4"><button class="btn btn-light btn-subscribe">Subscribe</button></div>
             </div>
         </section>
-        <section class="section_article">
-            <article class="col-sm-12">
-                <div class="main_artical_img"><img src="resources/1.jpg"></div>
-                <h3></h3>
-                <p></p>
-                <h3></h3>
+        <section class="section_article container-fluid">
+            <article>
+                <div class="main_artical_img col-sm-12"><img src="resources/1.jpg" class="img-fluid article-img"></div>
+                <h3><a href="#">2012's Best Summer Cookbooks</a></h3>
+                <p>With the best of the season coming from "orchards, farms and gardens," NPR has put together an impressive collection of 10 summer cookbooks.</p>
+                <h3>May 23, 2012 / <a href="#">Read >></a></h3>
             </article>
-            <article class="col-sm-12"></article>
-            <article class="col-sm-12"></article>
-            <article class="col-sm-12"></article>
+            <article>
+                <div class="main_artical_img col-sm-12"><img src="resources/2.jpg" class="img-fluid article-img"></div>
+                <h3><a href="#">2012's Best Summer Cookbooks</a></h3>
+                <p>With the best of the season coming from "orchards, farms and gardens," NPR has put together an impressive collection of 10 summer cookbooks.</p>
+                <h3>May 23, 2012 / <a href="#">Read >></a></h3>
+            </article>
+            <article>
+                <div class="main_artical_img col-sm-12"><img src="resources/3.jpg" class="img-fluid article-img"></div>
+                <h3><a href="#">2012's Best Summer Cookbooks</a></h3>
+                <p>With the best of the season coming from "orchards, farms and gardens," NPR has put together an impressive collection of 10 summer cookbooks.</p>
+                <h3>May 23, 2012 / <a href="#">Read >></a></h3>
+            </article>
+            <article>
+                <div class="main_artical_img col-sm-12"><img src="resources/4.jpg" class="img-fluid article-img"></div>
+                <h3><a href="#">2012's Best Summer Cookbooks</a></h3>
+                <p>With the best of the season coming from "orchards, farms and gardens," NPR has put together an impressive collection of 10 summer cookbooks.</p>
+                <h3>May 23, 2012 / <a href="#">Read >></a></h3>
+            </article>
         </section>
     </main>
-    <footer>
-        <div class="copyright"></div>
-        <div class="social_media">
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-linkedin"></i>
+    <footer class="container-fluid">
+        <div class="footer form-inline">
+            <div class="copyright col-sm-7">
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Contact</a><br> &copy; 2017 Food Sense, all rights reserved.</p>
+            </div>
+            <div class="social_media col-sm-5">
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-wechat"></i>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
