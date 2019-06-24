@@ -9,6 +9,15 @@ a {
     color: #40a390;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /********header*********/
 
@@ -16,10 +25,18 @@ header {
     text-align: center;
 }
 
+
+/********main***********/
+
+.section_rotation {
+    position: relative;
+}
+
 .rotation_banner_top {
     font-size: 18px;
     line-height: 35px;
     padding: 10px 20px;
+    background-color: #ffffff;
 }
 
 .rotation_banner_middle {
@@ -39,13 +56,13 @@ header {
 }
 
 .section_subscribe {
-    padding-top: 25px;
+    padding-top: 15px;
     padding-bottom: 25px;
 }
 
 .subscribe_description {
-    padding-left: 30px;
-    padding-right: 30px;
+    min-height: 50px;
+    padding-top: 6px;
 }
 
 .subscribe_container {
@@ -75,19 +92,6 @@ header {
     border: 1px solid #cccccc;
 }
 
-.footer {
-    border-top: 1px solid #cccccc;
-    font-size: 14px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: #cccccc;
-}
-
-.social_media>i {
-    padding: 0 8px;
-    font-size: 3em;
-}
-
 .btn-subscribe {
     border: 1px solid #cccccc;
 }
@@ -97,7 +101,49 @@ header {
     height: 100%;
 }
 
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.tabs li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.tabs a {
+    display: block;
+    padding: 15px 20px;
+    background-color: #eff8f7;
+}
+
+.tabs a:hover {
+    background-color: #d9efec;
+}
+
+
+/************footer************/
+
+.footer {
+    border-top: 1px solid #cccccc;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #cccccc;
+}
+
+.social_media {
+    text-align: right;
+}
+
+.social_media>i {
+    padding: 0 8px;
+    font-size: 3em;
+}
+
 @media (max-width: 575.98px) {
+    /*********header********/
     .menu {
         position: relative;
         width: 100%;
@@ -118,9 +164,11 @@ header {
         justify-content: center;
         border-bottom: 1px solid #cccccc;
     }
+    /*********main********/
     .rotation_banner_bottom {
         border-bottom: 1px dashed #cccccc;
     }
+    /*********footer******/
     .social_media>i {
         padding: 0 3px;
         font-size: 2em;
@@ -128,6 +176,7 @@ header {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+    /*********header*********/
     .menu {
         position: relative;
         width: 100%;
@@ -147,12 +196,14 @@ header {
         justify-content: center;
         border-bottom: 1px solid #cccccc;
     }
+    /*********main*********/
     .rotation_banner_bottom {
         border-bottom: 1px dashed #cccccc;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    /*********header*********/
     .logo {
         padding: 15px 0;
     }
@@ -160,8 +211,108 @@ header {
         font-size: 16px;
         line-height: 28px;
     }
+    .nav {
+        padding-top: 33px;
+        justify-content: flex-end;
+    }
+    .header {
+        max-height: 135px;
+    }
+    .logo_img {
+        width: 120px;
+        height: 110px;
+    }
+    /*********main*********/
+    .rotation_banner {
+        position: absolute;
+        top: 55%;
+        width: 95%;
+    }
+    .rotation_banner_top {
+        width: 200px;
+    }
+    .rotation_banner_middle {
+        width: 480px;
+    }
+    .rotation_banner_bottom {
+        line-height: 14px;
+        padding: 4px;
+        background-color: #f0f0f0;
+        width: 160px;
+        text-align: center;
+        color: #5a5a5a;
+        position: absolute;
+        right: 25px;
+        bottom: 65px;
+    }
+    .rotation_banner_bottom:after {
+        content: "";
+        clear: both;
+    }
+    .subscribe_container {
+        padding-bottom: 0;
+    }
+    .section_article h3 {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {}
-
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .main-container {
+        flex-direction: row;
+    }
+    /*********header*******/
+    .logo_img {
+        width: 130px;
+        height: 130px;
+        padding: 10px 0 10px 10px;
+    }
+    .nav-item {
+        display: flex;
+    }
+    .menu {
+        padding-left: 30px;
+        padding-right: 0;
+    }
+    /*********main*********/
+    .rotation_banner {
+        position: absolute;
+        top: 55%;
+        width: 95%;
+    }
+    .rotation_banner_top {
+        width: 200px;
+    }
+    .rotation_banner_middle {
+        width: 480px;
+    }
+    .rotation_banner_bottom {
+        line-height: 14px;
+        padding: 4px;
+        background-color: #f0f0f0;
+        width: 160px;
+        text-align: center;
+        color: #5a5a5a;
+        position: absolute;
+        right: 25px;
+        bottom: 65px;
+    }
+    .rotation_banner_bottom:after {
+        content: "";
+        clear: both;
+    }
+    .subscribe_container {
+        padding-bottom: 0;
+    }
+    .section_article h3 {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
