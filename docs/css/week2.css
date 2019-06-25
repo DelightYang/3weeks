@@ -264,8 +264,15 @@ header {
 @media (min-width: 1200px) {
     .main-container {
         flex-direction: row;
+        padding-top: 70px;
     }
     /*********header*******/
+    .header {
+        max-width: 400px;
+    }
+    .header div {
+        justify-content: left;
+    }
     .logo_img {
         width: 130px;
         height: 130px;
@@ -273,10 +280,24 @@ header {
     }
     .nav-item {
         display: flex;
+        padding-top: 10px;
     }
     .menu {
-        padding-left: 30px;
+        padding-left: 28px;
         padding-right: 0;
+    }
+    .header_tweet {
+        text-align: left;
+        padding-left: 28px;
+    }
+    .btn-tweet {
+        background-color: none;
+        border: 1px solid #cccccc;
+        color: #1d9d73;
+    }
+    .header_tweet h5 {
+        border-bottom: 1px dotted #cccccc;
+        margin-bottom: 15px;
     }
     /*********main*********/
     .rotation_banner {
