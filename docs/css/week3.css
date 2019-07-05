@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
 }
 
@@ -9,7 +9,7 @@
 /**************header**************/
 
 .nav-bar {
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 300;
     padding: 5px 15px;
@@ -111,11 +111,11 @@
 
 .slider {
     position: relative;
-    background-color: black;
 }
 
 .slider img {
     z-index: 10;
+    width: 100%;
 }
 
 .callbacks_nav {
@@ -154,22 +154,110 @@
 /********section_scroll*********/
 
 .section-scroll_top,
-.section-scroll_bottom {
+.section-images {
     padding: 50px 50px;
     text-align: center;
 }
 
 .section-scroll_top h2,
-.section-scroll_bottom h2 {
+.section-images h2 {
     color: #e91e63;
     padding-bottom: 20px;
 }
 
 .section-scroll_top h4,
-.section-scroll_bottom h4 {
+.section-images h4 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+.section-images-item {
+    padding: 10px;
+}
+
 
 /********end_section_scroll*********/
+
+
+/********section_services*********/
+
+.section-services {
+    padding: 50px 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.services-div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section-services h3 {
+    color: #071ea0;
+    padding-bottom: 20px;
+}
+
+.section-services h4 {
+    padding-bottom: 20px;
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.section-services .glyphicon {
+    font-size: 30px;
+    background: #E91E63;
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff;
+    margin-bottom: 15px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.section-services p {
+    font-size: 14px;
+    line-height: 27px;
+    color: #999;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.services-div a {
+    color: #E91E63;
+    border: 2px solid #E91E63;
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 7px 15px;
+    display: inline-block;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.services-div:hover a {
+    color: #fff;
+    border: 2px solid #071ea0;
+    background: #071ea0;
+}
+
+.services-div:hover .glyphicon {
+    background: #071ea0;
+}
+
+
+/********end section_services*********/
